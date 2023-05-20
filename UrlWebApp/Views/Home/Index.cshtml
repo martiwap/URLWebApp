@@ -1,0 +1,36 @@
+﻿@model URLToPostViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<header>
+
+</header>
+
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <br />
+            <form method="post" action="createnew"> 
+            <fieldset>
+              <div>
+                <label>Your URL:</label>
+                <input type="text" name="longUrl" id="longUrl" value="" />
+              </div>
+              <div>
+                <label>Short:</label>
+                <input readonly type="text" name="localdomain" value="localhost:7136" />
+                <input type="text" name="alias" id="alias" value="" placeholder="alias" />
+              </div>
+              <div>
+                <label>&nbsp;</label>
+                <input type="submit" value="Submit" class="submit" />
+              </div>
+            </fieldset>
+            </form>
+    </div>
+</body>
+
+<footer>
+
+</footer>
+
